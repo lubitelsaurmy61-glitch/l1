@@ -46,7 +46,7 @@ for i in range(ceil(dlina / 60)):
             
 if ftext:
     print('Тест:', ftext)
-    lang = input("Введите код языка для перевода: ")
+    lang = input("Введите код языка для перевода (например, 'en' — английский, 'es' — испанский): ")
     translator = Translator()
     translated = translator.translate(ftext, dest=lang)
     print("🌍 Перевод:", translated.text)
